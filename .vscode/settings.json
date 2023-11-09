@@ -59,9 +59,9 @@
   /**
    * Control the behavior and rendering of the minimap.
    */
-  // "editor.minimap": {
-  //  "enabled": false
-  // },
+  "editor.minimap": {
+   "enabled": false
+  },
   /**
    * Display overflow widgets as `fixed`.
    * Defaults to `false`.
@@ -298,7 +298,8 @@
    * Enable format on save.
    * Defaults to true.
    */
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "files.autoSave": "afterDelay"
   /**
    * Controls if the editor should allow to move selections via drag and drop.
    * Defaults to false.
