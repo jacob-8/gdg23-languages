@@ -17,3 +17,7 @@
 .prose {
   font-size: 150% !important;
 }
+
+li {
+  font-size: 1.5rem;
+}
