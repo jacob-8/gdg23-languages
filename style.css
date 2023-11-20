@@ -1,0 +1,19 @@
+.grid-container {
+  grid-template-columns: 1fr 1fr !important;
+  grid-template-rows: 1px 2fr 1fr min-content !important;
+  grid-template-areas:
+    "top top"
+    "main note"
+    "next note"
+    "bottom bottom" !important;
+}
+
+.text-2xl.pl-2.pr-6.my-auto.tabular-nums {
+  position: fixed !important;
+  right: 0;
+  top: 0;
+}
+
+.prose {
+  font-size: 150% !important;
+}
