@@ -12,17 +12,7 @@ css: unocss
 title: 使用 AI 學語言！
 ---
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
 # 使用 AI 學語言！
-
-大型語言模型、Google NLP 語法分析、機器翻譯
 
 <div class="abs-br m-6 flex gap-2">
   <a href="http://github.com/jacob-8/gdg23-languages" target="_blank" alt="GitHub"
@@ -31,13 +21,21 @@ title: 使用 AI 學語言！
   </a>
 </div>
 
+---
+
+<img class="w-full fixed left-0 top-0" src="/title.jpg" />
+
 <!--
 大家好。我的主題是學語言。謝謝大家的興趣。現在我學中文。用過很多不同的方法：老師，課本，語言交換，台灣生活，舉辦活動，讀書，看電影，給演講，等，等。都有好處，壞處。關於學新的語言，最大的挑戰是了解這麼多的詞彙。
 
 目前我了解兩千字，和七八千左右的詞。你們呢？三到五千字(漢字)，可能更多。兩萬到五萬詞彙（要看每一個人）。如果我們一起聊天呢，你一定會提到一些東西，事情，情況，我聽不懂。
-
-所以學新的語言很難。學語言好像跳過很大的山谷。沒有橋。只有血、汗和淚。每天認真學習。但是我們有一些新的 AI 技術可以幫助我們跳過這麼大的山谷。今天我要分享如何使用大型語言模型 、Google 自然語言處理的語法分析和機器翻譯來快速學習語言。
 -->
+
+---
+
+<img class="w-full fixed left-0 top-0" src="/canyon.jpg" />
+
+<!-- 所以學新的語言很難。學語言好像跳過很大的山谷。沒有橋。只有血、汗和淚。每天認真學習。但是我們有一些新的 AI 技術可以幫助我們跳過這麼大的山谷。今天我要分享如何使用大型語言模型 、Google 自然語言處理的語法分析和機器翻譯來快速學習語言。 -->
 
 ---
 layout: image-right
@@ -237,7 +235,7 @@ GIF of showing/hiding translated portions >>
 <img class="my-4 w-full" src="/horse-fall-and-drag-once.gif" />
 
 <!--
-就像我從馬背上摔下來一樣。馬繼續往前跑，而我只是被拖著跑。 我要繼續騎馬（了解內容的意思），不要被拖著。怎麼辦？我可以很快看著英文。
+就像我從馬背上摔下來一樣。馬繼續往前跑，而我只是被拖著跑。 我要繼續騎馬（了解內容的意思），不要被拖著。怎麼辦？
 -->
 
 ---
@@ -247,9 +245,10 @@ image: /love-river.jpg
 
 # Google 翻譯
 
-GIF of showing/hiding translated portions >>
+<!-- GIF of showing/hiding translated portions >> -->
 
-<img class="my-4 w-full" src="/horse-jump.gif" />
+<img v-click-hide class="my-4 w-200px" src="/get-back-on.gif" />
+<img v-click class="my-4 w-full" src="/horse-jump.gif" />
 
 <style>
   .grid-cols-2 {
@@ -258,9 +257,13 @@ GIF of showing/hiding translated portions >>
 </style>
 
 <!--
-好像騎馬者重新騎上馬並繼續騎馬。 我不花精力猜猜看。 我只是繼續騎。
+我可以很快看著英文。好像騎馬者重新騎上馬並繼續騎馬。 我不花精力猜猜看。 我只是繼續騎。
 
 with jump: 了解，不錯，喔。。。
+
+另一方面，有時候你需要能夠在沒有幫助的情況，能夠自己重新騎上馬。 在生活對話中你需要能夠一直注意，一直猜猜看他們說什麼。 
+
+但我從影片中學習的目標是在一天內聽很多中文。我可以吃到飽而不累。
 -->
 
 ---
@@ -270,10 +273,6 @@ background: /horse-running.gif
 <img class="w-full" src="/horse-running.gif" />
 
 <!--
-另一方面，有時候你需要能夠在沒有幫助的情況，能夠自己重新騎上馬。 在生活對話中你需要能夠一直注意，一直猜猜看他們說什麼。 
-
-但我從影片中學習的目標是在一天內聽很多中文。我可以吃到飽而不累。
-
 換句話說，騎馬的時候，我要騎馬到非常遠的地方。 所以我必須留在馬背上。
 
 另外好處是，如果我要看某部影片，我就看。 沒有什麼是太難的。
@@ -329,7 +328,7 @@ url: https://tutor.polylingual.dev/zh-TW
 - Language tutor: https://tutor.polylingual.dev/zh-TW
 - X: [@jacobbowdoin](https://twitter.com/jacobbowdoin)
 - [了解 JavaScript 高雄社團](https://www.facebook.com/groups/liaojiejavascript) 
-  <img my-2 w-280px border="rounded" src="/facebook-qr.png">
+  <img my-2 w-260px border="rounded" src="/facebook-qr.png">
 
 <!--
 我今天只展示了簡單的代碼，因為我使用 AI 最重要的事是首先你需要了解用法概念。之後就可以寫代碼。正確概念比艱難。寫代碼比較容易。
