@@ -201,27 +201,85 @@ image: /riding-lamb.jpg
 -->
 
 
---- 
+---
+layout: image-right
+image: /love-river.jpg
+---
 
 # Google 翻譯
 
-Show GIF of Showing/hiding translated portions as I study, just when I need them.
+GIF of showing/hiding translated portions >>
 
-Lastly, the most foundational part of this tool is the use of automatic translations to help bring clarity when I am confused by a new word or complex sentence. Yes, you thought when I said using AI I would focus on the new language models. We need them, and they're helpful, but let's not forgot to use the existing AI technology that's already here. It's fast and cheap! The Google Translate API is a similar setup process to the 語法分析 and is totally worth it as it's only $1 per 五萬 characters with the first 五十萬免費的.
+<v-clicks>
 
-I use Google Translate to bring each sentence into English. This is key to making our desired content, comprehensible. I start in Chinese but if I don't understand and get confused, it's just a click away to be back in the loop. Confusion makes the brain tired and I want to make the language learning process take as little energy as possible so I can spend more energy learning.
+<img class="my-4 w-full" src="/horse-jump.gif" />
 
-Now everything out of language model and everything in our YouTube video will be automatically translated. But we'll put it out of sight so that we only look at it when needed. I don't want to just read English.
+</v-clicks>
 
-A key aspect of language learning is the **ability to notice**. I need to take note of new words and grammar patterns and how they are used in speech. This is why meaningful and comprehensive is important. If it's meaningful, I will be very interested in a particular sentence's meaning and I will want to take notice. But this only works if it's comprehensible. Sometimes the context of the movie will make the meaning clear. When it doesn't we can then lean on a translation.
+<style>
+  .grid-cols-2 {
+    grid-template-columns: 3fr 2fr;
+  }
+</style>
 
-Our goal in using AI is to enlarge the amount of natural and real language (not AI generated language) that we can consume in a day. We only have so much energy each day. There are two guys named John and Ash that run a Chinese learning business called Outlier Linguistics. I admire them and have used a lot of their resources to learn Chinese. But John gave some advice once that I disagree with. He talked about how in one of his Chinese classes, the professor would give a dialogue which had some new words. Their assignment would be to listen to the dialogue over and over and over until they could understand the meaning of the new words. They shouldn't look at the glossary, or at least they should try many times before looking at the glossary. I disagree with this advice. If you have a 6 minute dialogue and you listen through it multiple times, then listen through each sentence 5 or 6 times to try to understand and then you finally look at the glossary and then listen back through. The amount of time that would take could be an hour, hour and a half. It depends on the difficulty. While I think there is value in listening to something once, trying your best to understand it without looking at any translations, I think you shouldn't let yourself stay puzzling very long. A little puzzle is good. A lot will just make you tired and lose interest. We can use Google Translate to avoid the tired and losing interest part.
+<!--
+最後，這工具最基本的部分是用自動翻譯來幫助我了解新單詞或複雜句子。我知道新的AI功能很紅（大型語言模型），但我們不能忘記已有的AI技術。Google 翻譯非常快而且便宜！每五萬字符只需1塊美元，首五十萬字免費。
 
-Let me say it another way: the first time a child learns the word shoe, the parent doesn't say "shoe" in a sentence and then ask the child to guess what it means. No, they put the shoe on the child's foot and point to it saying "shoe". They give a "translation" using a real world object. That's what the movie is for. It's goal is give picture translations to us. But sometimes speech is abstract and complex and can't always be pictured. The good news is that I've already grown up in English. I already understand many abstract concepts about life. I can use that pre-existing knowledge through a 1 second glance at an English translation and keep moving on my way.
+到這裡，我有英文，但我不要分心，一直讀英文。 只要我基本上理解了我正在觀看的內容，*我就像這個騎手一樣。 馬是影片，跨欄是每個新字，新語法。 如果我理解，那就好了，我可以繼續騎馬（繼續聽）。
 
-So an English translation is available to help me regain comprehension whenever I lose focus. It's like this: horse-clips
+但有時候， 我完全不明白一個，兩個，三個多的句子。
+-->
 
---- 
+---
+
+# Google 翻譯
+
+<img class="my-4 w-full" src="/horse-fall-and-drag-once.gif" />
+
+<!--
+就像我從馬背上摔下來一樣。馬繼續往前跑，而我只是被拖著跑。 我要繼續騎馬（了解內容的意思），不要被拖著。怎麼辦？我可以很快看著英文。
+-->
+
+---
+layout: image-right
+image: /love-river.jpg
+---
+
+# Google 翻譯
+
+GIF of showing/hiding translated portions >>
+
+<img class="my-4 w-full" src="/horse-jump.gif" />
+
+<style>
+  .grid-cols-2 {
+    grid-template-columns: 3fr 2fr;
+  }
+</style>
+
+<!--
+好像騎馬者重新騎上馬並繼續騎馬。 我不花精力猜猜看。 我只是繼續騎。
+
+with jump: 了解，不錯，喔。。。
+-->
+
+---
+background: /horse-running.gif
+---
+
+<img class="w-full" src="/horse-running.gif" />
+
+<!--
+另一方面，有時候你需要能夠在沒有幫助的情況，能夠自己重新騎上馬。 在生活對話中你需要能夠一直注意，一直猜猜看他們說什麼。 
+
+但我從影片中學習的目標是在一天內聽很多中文。我可以吃到飽而不累。
+
+換句話說，騎馬的時候，我要騎馬到非常遠的地方。 所以我必須留在馬背上。
+
+另外好處是，如果我要看某部影片，我就看。 沒有什麼是太難的。
+-->
+
+---
 
 # Google 翻譯: 安裝
 
@@ -239,14 +297,21 @@ So an English translation is available to help me regain comprehension whenever 
 
 ---
 
-## Bonus: Explain word in context
+# 另外一個功能: 根據上下文解釋一個單字
 
-Now I'm cruising, I started with a summary, I have my word breaks, I have my translations, and my dictionary help when I need it. Pretty cool. But let's not stop here. Not that I have all this analyzed data, my language model becomes even more useful. I can click on a word to get an explanation of the word's meaning in the context of the video.
+Image asking about a word >>
 
-## Bonus: Ask about something in the video
+<!-- 關於這個AI導師的基本的功能，到這邊就好了。但我們不必就這邊停。 我們可以使用字幕和 GPT4-turbo 創建任何其他有用的功能。
 
-Another thing we can do with our language model is to ask a question at any point in the conversation to have a discussion about something. We can include the video summmary and the last few sentences of the clip for context and ask what the word means.
+我們可以點擊一個單字來問『在這個上下文，那個字有什麼意思？』 -->
 
+---
+
+# 另外一個功能: Ask about something in the video
+
+Image asking a question >>
+
+<!-- 或者我們可以在對話中隨時提出問題來討論某件事。 我們可以包含影片的摘要和最後幾句話以獲取上下文。 -->
 
 ---
 layout: iframe-right
@@ -259,24 +324,28 @@ url: https://tutor.polylingual.dev/zh-TW
 
 ---
 
-# 學英文
-
-<!-- 
-This has all been about studying Chinese which most of you don't need help with. Instead of learning Chinese with AI's help, you'd like to learn English with AI's help. Obviously with English you don't need the word breaks, but there are other aspects of Syntax analysis that you could find very helpful. And the conversational and translation pieces apply perfectly. In fact, there's more transcribed English content on YouTube than there is Chinese content. I'm currently working on making it go the other direction to allow you to watch English videos with help. If you're interested in working together with me to add support for learning English as a Chinese speaker, please let me know and we can work together (in Chinese). Some parts of the service will be free, like the video playing and dictionary lookups. Google Translate and syntax analysis will be free as long as I stay under the free tier. After that I'll have to pass on API costs to users but they're pretty cheap. If you don't want to pay, it's open source and if you help work on it, it'd be pretty easy for you to spin up your own copy and use your own API keys with free tiers. The only thing that will cost for sure, regardless is the conversational AI unless you use a local model. You could help me get that working too. That'd be cool. Anyhow, here's a QR code for our Facebook group and you can just contact me through Facebook or chat afterwards to get connected. Our first working session will be _________. If you can't make that time then just send me a message and we'll see if we can work something else out.
- -->
-
----
-
-# 有問題嗎
-
 - Slides: http://github.com/jacob-8/gdg23-languages
 - Code: http://github.com/jacob-8/polylingual.dev
+- Language tutor: https://tutor.polylingual.dev/zh-TW
+- X: [@jacobbowdoin](https://twitter.com/jacobbowdoin)
 - [了解 JavaScript 高雄社團](https://www.facebook.com/groups/liaojiejavascript) 
-  <img my-2 w-270px border="rounded" src="/facebook-qr.png">
-- [@jacobbowdoin](https://twitter.com/jacobbowdoin)
+  <img my-2 w-280px border="rounded" src="/facebook-qr.png">
 
 <!--
-I've showed some pseudo-code throughout the presentation, but you can go to github.com/jacob-8/polylingual.dev for the actual code to learn more. You can go to github.com/jacob-8/gdg23-languages for the slides.
+我今天只展示了簡單的代碼，因為我使用 AI 最重要的事是首先你需要了解用法概念。之後就可以寫代碼。正確概念比艱難。寫代碼比較容易。
 
-有問題嗎, 掃描(sǎomiáo) QR code 進入我的 Facebook 社團。你會看到一個討論區，請把你的問題放在那邊(用中文)。如果我看不懂，我可以問我的學語言的夥伴。
+如果你喜歡我分享的概念，請查看 github.com/jacob-8/polylingual.dev 以了解更多。 我的用字典、YouTube 和 Google 翻譯學習中文的經驗已經超過一年多了。 你今天看到的是重寫，以清理內容並添加 Google 語法分析和大型語言模型。
+
+我也知道我只討論了學中文，而你們大多數人不需要學中文。 也許你對在 AI 的幫助下學英語更感興趣。 到目前，這個工具的用戶只是我、我太太和朋友們，但我正在擴展它以包括其他語言，讓你可以觀看英文的影片。
+
+如果你有興趣跟我合作，為華人學英文提供支持，請告訴我，或者你可以在 Facebook 上加入我的了解 JavaScript 高雄社團來與我聯繫。 我已經在那裡發布了今天的 PPT 和代碼的連結，還有我也會在那裡發布有關該工具的未來更新。
+
+那，誰有問題？你可以直接問我。請你說簡單一點。如果你的問題比較複雜的話，請掃描這個 QR code，進入我的臉書社團。你會看到一個討論區，請把你的問題放在那邊。如果我看不懂，我可以問我的學語言的夥伴。
+
+
+Possible questions:
+
+compound interest 我們使用的是複利原理。
+
+Some parts of the service will be free, like the video playing and dictionary lookups. Google Translate and syntax analysis will be free as long as I stay under the free tier. After that I'll have to pass on API costs to users but they're pretty cheap. If you don't want to pay, it's open source and if you help work on it, it'd be pretty easy for you to spin up your own copy and use your own API keys with free tiers. The only thing that will cost for sure, regardless is the conversational AI unless you use a local model. You could help me get that working too. That'd be cool.
 -->
