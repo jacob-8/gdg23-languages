@@ -141,24 +141,27 @@ image: /riding-lamb.jpg
 
 ---
 
-# 大型語言模型:總結內容
+# 大型語言模型：總結內容
 
-- 取得API金鑰: https://platform.openai.com/api-keys
+- 取得API金鑰：https://platform.openai.com/api-keys
 - 添加串流服務器 endpoint
-  ```ts {1,3,18|18-19}
+  ```ts
   export const POST: RequestHandler = async ({ request }) => {
-    const { captions } = await request.json()
-    const completion = await openai.createChatCompletion({
-      model: 'gpt-4-turbo',
-      messages: [
-          { role: 'system', content: system_message },
-          { role: 'user', content: generate_user_prompt(captions) },
-        ],
-      max_tokens: 1000,
-      temperature: 0,
+    const { model, messages } = await request.json()
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${OPENAI_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model,
+        messages,
+        stream: true,
+        temperature: 0,
+      }),
     })
-    const { choices: [{ message }] } = completion.data
-    return json(message)
+    return new Response(response.body, { headers: { 'Content-Type': 'text/event-stream;charset=utf-8' } })
   }
   ```
 - 在前端顯示摘要
@@ -183,25 +186,38 @@ Show summary screenshot first?
 - 我**個人**認為
 - **十個**人認為
 
+<!--
+總結很棒，但我需要更多幫助。 這部影片有一些字我不明白。 我想要一些自動字典和發音幫助顯示。但是中文沒有空格！怎麼自動地查字典？  這是一個斷詞問題。 之前我用過一個 package 叫 jieba-wasm ，效果還可以，但會出錯。
+-->
+
+---
+
+# Google 自然語言處理: 語法分析
+
 ## 解決方法:
-- 取得API金鑰: TODO...
+- 取得API金鑰: https://cloud.google.com/natural-language
 - 添加服務器 endpoint
-  ```ts {1,3,18|18-19}
+  ```ts
+  const languageServiceClient = new LanguageServiceClient({ credentials: CREDENTIALS, projectId: CREDENTIALS.project_id })
+  
   export const POST: RequestHandler = async ({ request }) => {
-    const { content } = await request.json()
-    const response = fetch('') // TODO
-    const { messages } = response.json()
-    return json(messages)
+    const { content, language } = await request.json()
+    const [syntax] = await languageServiceClient.analyzeSyntax({
+      document: {
+        content,
+        language, // 'en' or 'zh'
+        type: 'PLAIN_TEXT',
+      },
+      encodingType: 'UTF8',
+    })
+    return json(syntax)
   }
   ```
 - 在前端顯示摘要
 
 <!--
-總結很棒，但我需要更多幫助。 這裡有一些字我不明白。 我想要一些自動字典和發音幫助顯示。但是中文沒有空格！怎麼自動地查字典？  這是一個斷詞問題。 之前我用過一個 package 叫 jieba-wasm ，效果還可以，但會出錯。 
-
-我想要更好的方法，因為我想在學習中與我的導師快速討論新的詞彙。如果斷詞錯誤，這會變得很困難。 為此，我會使用 Google 語法分析來查找斷詞。這樣會幫助我我了解每個單字是什麼。
+我想要更好的方法，因為我想在學習中與我的導師快速討論新的詞彙。如果斷詞錯誤，這會變得很困難。 為此，我會使用 Google 語法分析來查找斷詞。這樣會幫助我了解每個單字是什麼。
 -->
-
 
 ---
 layout: image-right
@@ -286,17 +302,27 @@ background: /horse-running.gif
 
 # Google 翻譯: 安裝
 
-- 取得API金鑰: TODO...
+- 取得API金鑰: https://cloud.google.com/translate
 - 添加服務器 endpoint
-  ```ts {1,3,18|18-19}
-  export const POST: RequestHandler = async ({ request }) => {
-    const { content } = await request.json()
-    const response = fetch('') // TODO
-    const { messages } = response.json()
-    return json(messages)
-  }
-  ```
+```ts {all|4|5-11}
+const translationClient = new TranslationServiceClient({ credentials: CREDENTIALS, projectId: CREDENTIALS.project_id })
+
+export const POST: RequestHandler = async ({ request }) => {
+  const { text, sourceLanguageCode, targetLanguageCode } = await request.json()
+  const [response] = await translationClient.translateText({
+    parent: `projects/${CREDENTIALS.project_id}/locations/global`,
+    contents: [text],
+    mimeType: 'text/plain',
+    sourceLanguageCode,
+    targetLanguageCode,
+  })
+  const translation = response.translations.map(t => t.translatedText).join('\n')
+  return json(translation)
+}
+```
 - 在前端顯示摘要
+
+<!-- The install process is pretty similar to the syntax analysis -->
 
 ---
 
