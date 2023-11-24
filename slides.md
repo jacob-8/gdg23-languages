@@ -120,7 +120,7 @@ image: /riding-lamb.jpg
 
 ---
 layout: image-right
-image: /riding-lamb.jpg
+image: /process-overview.gif
 ---
 
 # 步驟
@@ -130,6 +130,12 @@ image: /riding-lamb.jpg
 - 摘要內容 (**大型語言模型**) 
 - **分析**摘要+內容
 - **翻譯**摘要+內容
+
+<style>
+  .grid-cols-2 {
+    grid-template-columns: 2fr 3fr;
+  }
+</style>
 
 <!--
 這個創建的過程有五個步驟 (read...)
@@ -171,8 +177,6 @@ image: /riding-lamb.jpg
 - 在前端顯示摘要
 
 <!--
-Show summary screenshot first? 
-
 第一步：選擇影片、第二步：取得的字幕不是難的，你可以自己查看我的代碼。我們看一看第三到第五步： AI 的部分。
 
 我學中文的時候，在觀看一個影片之前，我想要快速得預習影片的內容。 我可以把字幕送給 GPT3.5/4-turbo，說：「請給我整個影片的摘要」。 
@@ -190,8 +194,32 @@ Show summary screenshot first?
 - 我.**個人**.認為
 - **十個**.人認為
 
+<v-clicks>
+
+<img class="my-4 w-full" src="/kaibi-not-analyzed.png" />
+
+</v-clicks>
+
 <!--
-摘要很棒，但我需要更多幫助。 這部影片有一些字我不明白。 我想要一些字典提示。關於使用字典，中文的話要先斷詞，然後電腦可以自動給你一個解釋（因為中文沒有空格）。要怎麼解決呢？這是一個斷詞問題。 之前我用過一個 package 叫 jieba-wasm ，效果還可以，但有時候會出錯。 (add error picture)
+摘要很棒，但我需要更多幫助。 這部影片有一些字我不明白。 我想要一些字典提示。關於使用字典，中文的話要先斷詞，然後電腦可以自動給你一個解釋（因為中文沒有空格）。要怎麼解決呢？這是一個斷詞問題。 之前我用過一個 package 叫 jieba-wasm ，效果還可以，但有時候會出錯。
+
+我想要更好的方法，因為我想在學習中與我的導師快速討論新的詞彙。如果斷詞錯誤，這會變得很困難。 為此，我會使用 Google 語法分析來查找斷詞。這樣會幫助我了解每個詞彙是什麼。
+
+你可以看到分析之前...
+-->
+
+---
+
+# Google 自然語言處理: 語法分析
+
+## 斷詞問題: 
+- 我.**個人**.認為
+- **十個**.人認為
+
+<img class="my-4 w-full" src="/kaibi-analyzed.png" />
+
+<!--
+...分析之後
 -->
 
 ---
@@ -219,8 +247,6 @@ Show summary screenshot first?
 - 在前端顯示分析
 
 <!--
-我想要更好的方法，因為我想在學習中與我的導師快速討論新的詞彙。如果斷詞錯誤，這會變得很困難。 為此，我會使用 Google 語法分析來查找斷詞。這樣會幫助我了解每個詞彙是什麼。
-
 基本安裝的過程如下：
 
 https://cloud.google.com/natural-language/docs/analyzing-syntax?hl=zh-cn
@@ -228,12 +254,10 @@ https://cloud.google.com/natural-language/docs/analyzing-syntax?hl=zh-cn
 
 ---
 layout: image-right
-image: /love-river.jpg
+image: /show-hide-translations.gif
 ---
 
 # Google 翻譯
-
-GIF of showing/hiding translated portions >>
 
 <v-clicks>
 
@@ -241,11 +265,11 @@ GIF of showing/hiding translated portions >>
 
 </v-clicks>
 
-<style>
+<!-- <style>
   .grid-cols-2 {
     grid-template-columns: 3fr 2fr;
   }
-</style>
+</style> -->
 
 <!--
 最後，這工具最基本的部分是用自動翻譯來幫助我了解新單詞或複雜的句子。我知道新的AI功能很紅（大型語言模型），但我們不能忘記已有的AI技術。Google 翻譯非常快而且便宜！每五萬字符只是1塊美元，首五十萬字是免費的。
@@ -267,20 +291,12 @@ GIF of showing/hiding translated portions >>
 
 ---
 layout: image-right
-image: /love-river.jpg
+image: /show-hide-translations.gif
 ---
 
 # Google 翻譯
 
-<!-- GIF of showing/hiding translated portions >> -->
-
 <img class="my-4 w-300px" src="/get-back-on.gif" />
-
-<style>
-  .grid-cols-2 {
-    grid-template-columns: 3fr 2fr;
-  }
-</style>
 
 <!--
 我可以很快看著英文。好像騎馬者重新騎上馬並繼續騎馬。 我不用花精力猜它的意思。 我只需要繼續騎（聽）。
@@ -332,32 +348,30 @@ export const POST: RequestHandler = async ({ request }) => {
 
 ---
 
-# 另外一個功能: 根據上下文解釋一個單字
+# 另外一個功能
 
-Image asking about a word >>
-
+- 根據上下文解釋一個單字
+- 根據上下文提出問題
 <!--
 關於這個AI導師的基本的功能，到這裡應該就夠了。但我們不只是停留在這裡，我們還可以做得更好。我們可以使用字幕和 ChatGPT 創建任何其他有用的功能。
 
 我們可以點擊一個詞彙來問『在這個上下文，這個詞彙有什麼意思呢？』
--->
 
----
-
-# 另外一個功能: Ask about something in the video
-
-Image asking a question >>
-
-<!-- 或者我們可以在對話中隨時提出問題來討論某件事。 我們可以包含影片的摘要和最後幾句話以獲取上下文。 -->
+或者我們可以在對話中隨時提出問題來討論某件事。 我們可以包含影片的摘要和最後幾句話以獲取上下文。 -->
 
 ---
 layout: iframe-right
-url: https://tutor.polylingual.dev/zh-TW
+url: https://tutor.polylingual.dev/zh-TW/shows
 ---
 
 # 現場演示
 
-...
+<!--
+簡單的解釋到這裡，現在我有現場演示。
+
+http://localhost:5173/zh-TW/shows
+https://tutor.polylingual.dev/zh-TW/shows
+-->
 
 ---
 
