@@ -26,9 +26,9 @@ title: 使用 AI 學語言！
 <img class="w-full fixed left-0 top-0" src="/title.jpg" />
 
 <!--
-大家好。我的主題是如何用AI學語言。很開心大家的參與！我正在學習中文。用過很多不同的方法：老師、課本、語言交換、台灣生活、舉辦活動、讀書、看電影、演講、等等。都有好處和壞處。關於學新的語言，最大的挑戰是中文有這麼多的詞彙需要學習。
+大家好。我的主題是如何用AI學語言。很開心大家的參與！我正在學習中文。用過很多不同的方法：老師、課本、語言交換、台灣生活、舉辦活動、讀書、看電影、演講、等等。都有好處和壞處。關於學新的語言，最大的挑戰是每個語言有這麼多的詞彙需要學習。
 
-目前我了解兩千個漢字，和七八千個左右的詞。你們呢？五到八千個漢字，可能更多。兩萬到五萬個詞彙（要看每一個人）。如果我們一起聊天呢，你一定會提到一些我聽不懂的東西、事情、情況。
+目前我了解兩千個漢字，和七八千個左右的詞彙。你們呢？五到八千個漢字，可能更多。兩萬到五萬個詞彙（要看每一個人）。如果我們一起聊天呢，你一定會提到一些我聽不懂的東西、事情、情況。
 -->
 
 ---
@@ -36,7 +36,7 @@ title: 使用 AI 學語言！
 <img class="w-full fixed left-0 top-0" src="/canyon.jpg" />
 
 <!--
-所以學新的語言很難。學語言就像是要跳過很大的山谷。沒有橋。只有血、汗和淚。每天認真學習。但是我們有一些新的 AI 技術可以幫助我們跳過這麼大的山谷。今天我要分享如何使用大型語言模型 、Google 自然語言處理的語法分析和機器翻譯來快速學習語言。
+所以學新的語言很難。學語言就像是要跳過很大的山谷。沒有橋。只有血、汗和淚。每天認真學習。但是我們有一些新的 AI 技術可以幫助我們跳過這麼大的山谷。今天我要分享我的工具，分享如何使用大型語言模型 、Google 自然語言處理的語法分析和機器翻譯來快速學習語言。
 -->
 
 ---
@@ -61,7 +61,7 @@ image: /gao-tower.jpg
 
 (explain 高 picture)
 
-我知道：跟朋友、真的人的對話是最有意義的輸入。 但是有時候你的朋友很忙，有時候你很累，有時候對方說得太快。 你需要一個比較容易，自由的方法。怎麼找到？
+關於意義的輸入，我知道：跟朋友、真的人的對話是最有意義的輸入。 但是有時候你的朋友很忙，有時候你很累，有時候對方說得太快。 你需要一個很容易，自由的方法。怎麼找到？
 
 高 Source: https://victor-seet.com/cliftonstrengths-blog/interpreting-emotions-using-chinese-language
 -->
@@ -109,9 +109,9 @@ image: /riding-lamb.jpg
 </v-clicks>
 
 <!--
-但是「可理解」嗎？這是一個問題，正常的華人說得很快。速度非常快。而且用非常複雜的詞彙和文化概念。我不能完全理解。*我就像這些孩子一樣。 聽的時候我很努力，但很快就累了、跌倒了。然後必須休息。 
+但是「可理解」嗎？這是一個問題，正常的華人說得很快。速度非常快。而且用非常複雜的詞彙和文化概念。我不能完全理解。*我就像這些小孩子一樣。 聽的時候我很努力，但很快就累了、跌倒了。然後必須休息。 
 
-我需要的是一位導師、朋友，在我的語言學習中陪伴我。老師們的時間有限。朋友們的時間有限。 我所說的是一個每天每個小時的夥伴。只要我有時間就可以一起學習。
+我需要的是一位導師、朋友，在我的語言學習中陪伴我。老師們的時間有限。朋友們的時間有限。 我所說的是一個－每天每個小時的夥伴。只要我有時間就可以一起學習。
 
 讓我們看看怎麼使用三種不同的 AI 來創建我們的個人語言導師。
 
@@ -147,7 +147,9 @@ image: /process-overview.gif
 
 # 演示
 
-<!-- Add video here -->
+<!--
+Switch to video
+-->
 
 ---
 
@@ -177,7 +179,7 @@ image: /process-overview.gif
 - 在前端顯示摘要
 
 <!--
-第一步：選擇影片、第二步：取得的字幕不是難的，你可以自己查看我的代碼。我們看一看第三到第五步： AI 的部分。
+你剛剛看到的第一步：選擇影片、還有第二步：取得的字幕不是難的，你可以自己查看我的代碼。我們看一看第三到第五步： AI 的部分。
 
 我學中文的時候，在觀看一個影片之前，我想要快速得預習影片的內容。 我可以把字幕送給 GPT3.5/4-turbo，說：「請給我整個影片的摘要」。 
 
@@ -201,11 +203,11 @@ image: /process-overview.gif
 </v-clicks>
 
 <!--
-摘要很棒，但我需要更多幫助。 這部影片有一些字我不明白。 我想要一些字典提示。關於使用字典，中文的話要先斷詞，然後電腦可以自動給你一個解釋（因為中文沒有空格）。要怎麼解決呢？這是一個斷詞問題。 之前我用過一個 package 叫 jieba-wasm ，效果還可以，但有時候會出錯。
+摘要很棒，但我需要更多幫助。 這部影片有一些詞彙我不明白。 我想要一些字典提示。關於使用字典，中文的話要先斷詞，然後電腦可以自動給你一個解釋（因為中文沒有空格）。要怎麼解決呢？這是一個斷詞問題。 之前我用過一個 package 叫 jieba-wasm ，效果還可以，但有時候會出錯。
 
 我想要更好的方法，因為我想在學習中與我的導師快速討論新的詞彙。如果斷詞錯誤，這會變得很困難。 為此，我會使用 Google 語法分析來查找斷詞。這樣會幫助我了解每個詞彙是什麼。
 
-你可以看到分析之前...
+你可以看到分析之前*...
 -->
 
 ---
@@ -219,7 +221,7 @@ image: /process-overview.gif
 <img class="my-4 w-full" src="/kaibi-analyzed.png" />
 
 <!--
-...分析之後
+...還有分析之後
 -->
 
 ---
@@ -247,7 +249,7 @@ image: /process-overview.gif
 - 在前端顯示分析
 
 <!--
-基本安裝的過程如下：
+安裝語法分析基本的過程如下：
 
 https://cloud.google.com/natural-language/docs/analyzing-syntax?hl=zh-cn
 -->
@@ -272,9 +274,9 @@ image: /show-hide-translations.gif
 </style> -->
 
 <!--
-最後，這工具最基本的部分是用自動翻譯來幫助我了解新單詞或複雜的句子。我知道新的AI功能很紅（大型語言模型），但我們不能忘記已有的AI技術。Google 翻譯非常快而且便宜！每五萬字符只是1塊美元，首五十萬字是免費的。
+最後，這工具最基本的部分是用自動翻譯來幫助我了解新詞彙或複雜的句子。我知道新的AI功能很紅（大型語言模型），但我們不能忘記已有的AI技術。Google 翻譯非常快而且便宜！每五萬字符只是1塊美金，首五十萬字是免費的。
 
-現在，我有英文，但我不要一直讀英文。 只要我基本上理解了我正在觀看的內容，*我就像這個騎手一樣。 馬是影片，跨欄是每個新字，新語法。 如果我理解，那就好了，我可以繼續騎馬（繼續聽）。
+翻譯後，我有英文，但我不要一直讀英文。 只要我基本上理解了我正在觀看的內容，*我就像這個騎手一樣。 馬是影片，跨欄(kua4lan2)是每個新詞彙，新語法。 如果我理解，那就好了，我可以繼續騎馬（繼續聽）。
 
 但有時候， 我完全不明白一個，兩個，三個多的句子。
 -->
@@ -324,7 +326,7 @@ background: /horse-running.gif
 
 - 取得API金鑰: https://cloud.google.com/translate
 - 添加服務器 endpoint
-```ts {all|4|5-11}
+```ts
 const translationClient = new TranslationServiceClient({ credentials: CREDENTIALS, projectId: CREDENTIALS.project_id })
 
 export const POST: RequestHandler = async ({ request }) => {
@@ -367,7 +369,7 @@ url: https://tutor.polylingual.dev/zh-TW/shows
 # 現場演示
 
 <!--
-簡單的解釋到這裡，現在我有現場演示。
+簡單的解釋就到這裡，現在我有現場演示。
 
 http://localhost:5173/zh-TW/shows
 https://tutor.polylingual.dev/zh-TW/shows
@@ -377,13 +379,13 @@ https://tutor.polylingual.dev/zh-TW/shows
 
 - Slides: http://github.com/jacob-8/gdg23-languages
 - Code: http://github.com/jacob-8/poly-tutor
-- Language tutor: https://tutor.polylingual.dev/zh-TW
+- Language tutor: https://tutor.polylingual.dev
 - X: [@jacobbowdoin](https://twitter.com/jacobbowdoin)
 - [了解 JavaScript 高雄社團](https://www.facebook.com/groups/liaojiejavascript) 
   <img my-2 w-260px border="rounded" src="/facebook-qr.png">
 
 <!--
-我今天只展示了簡單的代碼，因為使用 AI 最重要的事，你需要先了解用法概念。之後就可以寫代碼。正確概念比艱難。寫代碼比較容易。
+我今天只展示了簡單的代碼，因為使用 AI 最重要的事，你需要先了解用法概念。之後就可以寫代碼。正確概念比較難。寫代碼比較容易。
 
 如果你喜歡我分享的概念，請查看以下的連結以了解更多。 
 
@@ -402,6 +404,10 @@ Skip:
 Possible questions:
 
 compound interest 我們使用的是複利原理。
-
-Some parts of the service will be free, like the video playing and dictionary lookups. Google Translate and syntax analysis will be free as long as I stay under the free tier. After that I'll have to pass on API costs to users but they're pretty cheap. If you don't want to pay, it's open source and if you help work on it, it'd be pretty easy for you to spin up your own copy and use your own API keys with free tiers. The only thing that will cost for sure, regardless is the conversational AI unless you use a local model. You could help me get that working too. That'd be cool.
 -->
+
+---
+
+# Google 語法分析
+
+<img class="my-4 w-full" src="/dependency-tree.png" />
