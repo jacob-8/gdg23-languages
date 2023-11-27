@@ -23,7 +23,7 @@ title: 使用 AI 學語言！
 
 ---
 
-<img class="w-full fixed left-0 top-0" src="/title.jpg" />
+<img class="w-full fixed left-0 top-0" src="/title.png" />
 
 <!--
 大家好。我的主題是如何用AI學語言。很開心大家的參與！我正在學習中文。用過很多不同的方法：老師、課本、語言交換、台灣生活、舉辦活動、讀書、看電影、演講、等等。都有好處和壞處。關於學新的語言，最大的挑戰是每個語言有這麼多的詞彙需要學習。
